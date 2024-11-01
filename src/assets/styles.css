@@ -1,0 +1,32 @@
+html, body {
+    height: 100%; 
+    margin: 0;
+    font-family: 'Archivo-light';
+}
+
+@font-face {
+    font-family: 'Archivo-light';
+    src: url('./fonts/Archivo.ttf') format('truetype'); 
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Archivo-medium';
+    src: url('./fonts/Archivo.ttf') format('truetype'); 
+    font-weight: 500;
+    font-style: normal;
+}
+
+.navbar-font {
+    font-family: 'Archivo-light';
+    height: 10.89vh;
+}
+
+.Hero-content {
+    min-height: 690px;
+}
+
+
+
+   
