@@ -1,12 +1,22 @@
 import './App.css'
-import NavbarComponent from './components/NavbarComponent' 
+import './assets/styles.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import ItemListContainer from './components/ItemListContainer'
+import NavbarReactBootstrap from './components/NavbarReactBootstrap'
+import HeroSection from './components/HeroSection'
+import Hero_homePage from './assets/Hero_homePage.png'
+
 
 function App() {
   return (
     <div>
-      <NavbarComponent/>
-      <ItemListContainer greeting ='Bienvenidos'/>
+      <NavbarReactBootstrap/>
+      <ItemListContainer greeting ='Welcome to my e-commerce'/>
+      <HeroSection 
+      backgroundImage={Hero_homePage} 
+      // title="New in" 
+      // subtitle="Ver todo"
+      />
     </div>
   )
 }
