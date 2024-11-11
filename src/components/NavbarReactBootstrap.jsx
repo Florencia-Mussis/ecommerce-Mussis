@@ -12,8 +12,8 @@ function NavbarReactBootstrap() {
             <img src={Culture_logo} alt='logo'/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto justify-content-center w-100 gap-5">
+        <Navbar.Collapse className='nav-items-container z-1' id="basic-navbar-nav">
+          <Nav className="me-auto justify-content-center w-100 nav-links-container">
             <Nav.Link href="#home" className="text-uppercase fs-6 text-dark">Mujer</Nav.Link>
             <Nav.Link href="#link" className="text-uppercase fs-6 text-dark">Hombre</Nav.Link>
             <Nav.Link href="#link" className="text-uppercase fs-6 text-dark">Niña</Nav.Link>
