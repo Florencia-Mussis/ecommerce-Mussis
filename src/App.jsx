@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import ItemListContainer from './components/ItemListContainer'
 import NavbarReactBootstrap from './components/NavbarReactBootstrap'
 import HeroSection from './components/HeroSection'
-import Hero_homePage from './assets/Hero_homePage.png'
 import ItemDetailContainer from './components/ItemDetailContainer'
 import Footer from './components/Footer'
 

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react"
 import { getProducts } from "../mock/data"
 import ItemList from "./ItemList"
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(false)
 
