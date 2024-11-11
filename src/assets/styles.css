@@ -1,32 +1,175 @@
+/*======================================================================================================================
+STYLES
+======================================================================================================================*/
+/* Globals */
+@font-face {
+    font-family: 'Archivo';
+    font-weight: 300;
+    src: url('./fonts/archivo-300.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Archivo';
+    font-weight: 500;
+    src: url('./fonts/archivo-500.woff2') format('woff2');
+}
+
 html, body {
     height: 100%; 
     margin: 0;
-    font-family: 'Archivo-light';
-}
-
-@font-face {
-    font-family: 'Archivo-light';
-    src: url('./fonts/Archivo.ttf') format('truetype'); 
+    font-family: 'Archivo';
     font-weight: 300;
-    font-style: normal;
 }
 
-@font-face {
-    font-family: 'Archivo-medium';
-    src: url('./fonts/Archivo.ttf') format('truetype'); 
-    font-weight: 500;
-    font-style: normal;
-}
-
+/* Navbar */
 .navbar-font {
-    font-family: 'Archivo-light';
+    font-family: 'Archivo';
+    font-weight: 300;
     height: 10.89vh;
 }
 
-.Hero-content {
-    min-height: 690px;
+.nav-links-container {
+    gap: 60px;
 }
 
+@media (max-width: 992px) {
+    .nav-items-container {
+        background-color: white;
+        text-align: center;
+        justify-items: center;
+    }
 
+    .nav-links-container {
+        gap: 0px;
+    }
+}    
 
-   
+/* Hero section */
+.hero-content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-content img {
+    width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+}
+
+.text-overlay h1 {
+    font-family: 'Archivo';
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.text-overlay p {
+    font-family: 'Archivo';
+    font-weight: 300;
+    font-size: 12px;
+}
+
+/* Collection section */
+.item-list-container {
+    text-align: -webkit-center;
+    margin: 60px 30px !important;
+}
+
+.card-tag {
+    font-family: 'Archivo';
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.card-title {
+    font-family: 'Archivo';
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+/* Footer */
+.footer-container {
+    padding: 42px !important;
+    gap: 100px;
+}
+
+.categories-list {
+    gap: 30px;
+}
+
+.categories-list a {
+    font-family: 'Archivo';
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.trademark {
+    font-size: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        gap: 40px;
+    }
+    .footer-categories {
+        gap: 100px;
+    }
+}   
+
+/* Counter */
+.count-container {
+    gap: 40px;
+}
+
+.units-count {
+    gap: 10px;
+}
+.units-text {
+    font-family: 'Archivo';
+    font-weight: 300;
+    font-size: 10px;
+}
+
+.count-selectors {
+    gap: 10px;
+}
+
+.count-button {
+    width: 26px;
+    height: 26px;
+    border: 0.5px solid black;
+}
+
+.count-button span {
+    font-family: 'Archivo';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13.06px;
+    padding: 6px;
+}
+
+.add-to-cart {
+    font-family: 'Archivo';
+    font-weight: 500;
+    background-color: black;
+    font-size: 12px!important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
