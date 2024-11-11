@@ -5,18 +5,18 @@ import ItemListContainer from './components/ItemListContainer'
 import NavbarReactBootstrap from './components/NavbarReactBootstrap'
 import HeroSection from './components/HeroSection'
 import Hero_homePage from './assets/Hero_homePage.png'
+import ItemDetailContainer from './components/ItemDetailContainer'
+import Footer from './components/Footer'
 
 
 function App() {
   return (
     <div>
       <NavbarReactBootstrap/>
+      <HeroSection title="New in" subtitle="Ver todo"/>
       <ItemListContainer greeting ='Welcome to my e-commerce'/>
-      <HeroSection 
-      backgroundImage={Hero_homePage} 
-      // title="New in" 
-      // subtitle="Ver todo"
-      />
+      <ItemDetailContainer/>
+      <Footer/>
     </div>
   )
 }
