@@ -20,21 +20,21 @@ const ItemCount = ({stock, onAdd}) => {
     }
 
     return(
-        <div className="count-container d-flex flex-column">
-            <div className="units-count d-flex flex-column">
+        <div className="count-container d-flex flex-column w-100">
+            <div className="units-count d-flex flex-column align-items-start">
                 <p className="units-text text-uppercase mb-0">Unidades</p>
                 <div className="d-flex count-selectors">
                     <button className="count-button bg-white p-0" onClick={restar}>
-                        <span>-</span>
+                        <span>-</span> 
                     </button>
-                    <span className="">{count}</span>
+                    <span className="amount">{count}</span>
                     <button className="count-button bg-white p-0" onClick={sumar}>
                         <span>+</span>
                     </button>
                 </div>
             </div>
             <div>
-                <button className="text-uppercase rounded-0 add-to-cart text-white" onClick={onAddHandler}>Añadir a la bolsa</button>
+                <button className="text-uppercase rounded-0 add-to-cart text-white w-100" onClick={onAddHandler}>Añadir a la bolsa</button>
             </div>
         </div>
     )

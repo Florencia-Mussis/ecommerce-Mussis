@@ -12,8 +12,8 @@ function App() {
   return (
     <div>
       <NavbarReactBootstrap/>
-      <HeroSection title="New in" subtitle="Ver todo"/>
-      <ItemListContainer greeting ='Welcome to my e-commerce'/>
+      <HeroSection title="New in" subtitle="Ver todo"/> 
+      <ItemListContainer/>
       <ItemDetailContainer/>
       <Footer/>
     </div>
