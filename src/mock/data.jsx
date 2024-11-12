@@ -59,8 +59,13 @@ const products = [
         name: 'Mono largo lazo',
         stock: '10',
         price: '49,90',
-        description: '',
+        description: 'Tejido fluido. Diseño largo. Diseño recto. Escote de pico. Sin mangas. Tirantes anchos. Cierre de cremallera invisible en la parte posterior. Detalle cruzado. Forro interior. Disponible Plus.',
+        materials: 'Composición: 100% poliéster. Forro: 100% poliéster.',
+        shipping: 'Envío gratis a tienda.Dispones de 30 días para realizar tu devolución.',
         img: w6,
+        img2: w6,
+        img3: w6,
+        img4: w6,
         category: 'women'
     },
     {

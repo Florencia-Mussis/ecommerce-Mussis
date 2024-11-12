@@ -133,9 +133,75 @@ html, body {
     }
 }   
 
+/* Product Page */
+.product-page .col-md-4 {
+   padding: 15px;
+}
+
+.product-page .col-md-4 img {
+    padding-bottom: 30px;
+}
+
+.product-info {
+    padding-top: 30px;
+}
+
+.name-price {
+    margin-top: 16px;
+}
+
+.product-info .tag {
+    color: #BBBBBB;
+    font-family: 'Archivo';
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.product-info .title {
+    font-family: 'Archivo';
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0px;
+}
+
+.product-info .price {
+    font-family: 'Archivo';
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.collapsible-section {
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.collapsible-section p {
+    margin: 0px;
+}
+
+.aditional-info {
+    font-family: 'Archivo';
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.plus {
+    font-family: 'Archivo';
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.content p {
+    font-family: 'Archivo';
+    font-weight: 300;
+    font-size: 14px;
+    text-align: start;
+}
+
 /* Counter */
 .count-container {
     gap: 40px;
+    margin-top: 40px;
 }
 
 .units-count {
@@ -157,12 +223,20 @@ html, body {
     border: 0.5px solid black;
 }
 
-.count-button span {
+.count-button button span {
+    font-family: 'Archivo';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 13.06px;
+    padding: 6px;
+}
+
+span.amount {
     font-family: 'Archivo';
     font-weight: 500;
     font-size: 12px;
-    line-height: 13.06px;
-    padding: 6px;
+    display: flex;
+    align-items: center;
 }
 
 .add-to-cart {
@@ -173,3 +247,4 @@ html, body {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
