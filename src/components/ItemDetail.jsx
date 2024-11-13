@@ -1,6 +1,7 @@
 import React from "react"
 import ItemCount from "./ItemCount"
 import CollapsibleSection from "./CollapsibleSection"
+import ProductCarousel from "./ProductCarousel"
 
 const ItemDetail = ({product}) => {
     const onAdd = (count) => {
@@ -10,13 +11,17 @@ const ItemDetail = ({product}) => {
     }
 
     return(
-        <div className="product-page container">
+        <div className="product-page">
             <div className="row">
-                <div className="col-md-4 text-center">
+                <div className="carousel-container col-12 d-md-none">
+                    <ProductCarousel images={[product.img, product.img2, product.img3, product.img4]} />
+                </div>
+
+                <div className="col-md-4 text-center d-none d-md-block">
                     <img src={product.img} alt={product.img} className="w-100"/>
                     <img src={product.img2} alt={product.img} className="w-100"/>
                 </div>
-                <div className="col-md-4 text-center">    
+                <div className="col-md-4 text-center d-none d-md-block">    
                     <img src={product.img3} alt={product.img} className="w-100"/>
                     <img src={product.img4} alt={product.img} className="w-100"/>
                 </div>
@@ -29,11 +34,10 @@ const ItemDetail = ({product}) => {
                         </div>
                         <ItemCount stock={product.stock} onAdd={onAdd}/>
                         <CollapsibleSection product={product}/>
-                
                     </div>
-                </div>
-            </div>    
-        </div>    
+                </div>  
+            </div>  
+        </div>   
     )
 }
 
