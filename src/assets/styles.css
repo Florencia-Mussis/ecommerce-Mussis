@@ -22,27 +22,51 @@ html, body {
 }
 
 /* Navbar */
-.navbar-font {
+.navbar {
     font-family: 'Archivo';
     font-weight: 300;
     height: 10.89vh;
+    position: relative;
+}
+
+.navbar-collapse {
+    z-index: 1050;
+}
+
+.navbar-toggler {
+    z-index: 1050; 
 }
 
 .nav-links-container {
     gap: 60px;
 }
 
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.1rem !important;
+}
+
 @media (max-width: 992px) {
-    .nav-items-container {
+    .navbar-collapse {
         background-color: white;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+    }
+    .nav-items-container {
         text-align: center;
         justify-items: center;
+        padding-top: 10px; 
+        padding-bottom: 10px;
     }
-
     .nav-links-container {
-        gap: 0px;
+        gap: 20px;
     }
-}    
+    .cart-icon {
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+}
 
 /* Hero section */
 .hero-content {
@@ -73,7 +97,7 @@ html, body {
 .text-overlay h1 {
     font-family: 'Archivo';
     font-weight: 500;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .text-overlay p {
@@ -104,6 +128,12 @@ html, body {
     font-size: 14px;
 }
 
+@media (max-width: 768px) {
+    .item-list-container {
+        margin: 20px 8px !important;
+    }
+}
+
 /* Footer */
 .footer-container {
     padding: 42px !important;
@@ -131,11 +161,24 @@ html, body {
     .footer-categories {
         gap: 100px;
     }
+    .footer-container {
+        padding: 30px 20px !important;
+    }
 }   
 
 /* Product Page */
-.product-page .col-md-4 {
-   padding: 15px;
+.product-page .row {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    display: none !important;
+}
+
+.carousel-indicators [data-bs-target]  {
+    background-color: #131313 !important;
 }
 
 .product-page .col-md-4 img {
@@ -197,6 +240,21 @@ html, body {
     font-size: 14px;
     text-align: start;
 }
+
+@media (max-width: 768px) {
+    .carousel-container {
+        padding-bottom: 40px !important;
+    }
+    .product-info {
+        padding-top: 0px;
+    }
+    .product-page .row {
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 30px;
+        margin: 0px;
+    }
+} 
 
 /* Counter */
 .count-container {
