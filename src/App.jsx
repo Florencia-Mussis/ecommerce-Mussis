@@ -3,20 +3,24 @@ import './assets/styles.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import ItemListContainer from './components/ItemListContainer'
 import NavbarReactBootstrap from './components/NavbarReactBootstrap'
-import HeroSection from './components/HeroSection'
 import ItemDetailContainer from './components/ItemDetailContainer'
 import Footer from './components/Footer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Error from './components/Error'
 
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <NavbarReactBootstrap/>
-      <HeroSection title="New in" subtitle="Ver todo"/> 
-      <ItemListContainer/>
-      <ItemDetailContainer/>
+      <Routes>
+        <Route path='/' element={<ItemListContainer/>}/>
+        <Route path='/products/:category' element={<ItemListContainer/>}/>
+        <Route path='/item/:id' element={<ItemDetailContainer/>}/>
+        <Route path='*' element={<Error/>}/>
+      </Routes>
       <Footer/>
-    </div>
+    </BrowserRouter>
   )
 }
 
