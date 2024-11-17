@@ -1,23 +1,21 @@
-import Hero_homePage from '../assets/Hero_homePage.png'
-import Hero_homePage_mobile from '../assets/Hero_homePage_mobile.png'
-
-
-const HeroSection = ({ title, subtitle }) => {
+const HeroSection = ({ title, subtitle, images }) => {
     return (
         <div className="hero-content text-center d-flex align-items-center justify-content-center flex-column">
             <img
-                src={Hero_homePage}
+                src={images.desktop}
                 alt="Hero Background"
-                className="img-fluid d-none d-md-block" /* Imagen solo para escritorio */
+                className="img-fluid d-none d-md-block" 
             />
             <img
-                src={Hero_homePage_mobile}
+                src={images.mobile}
                 alt="Hero Background Mobile"
-                className="img-fluid d-md-none" /* Imagen solo para móviles */
+                className="img-fluid d-md-none"
             />
             <div className="text-overlay">
                 <h1>{title}</h1>
-                <p>{subtitle}</p>
+                <p className="all-products">
+                    <a href="#all-products">{subtitle}</a>
+                </p>
             </div>
         </div>
     );
