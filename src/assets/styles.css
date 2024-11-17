@@ -21,6 +21,10 @@ html, body {
     font-weight: 300;
 }
 
+.container {
+    max-width: none !important;
+}
+
 /* Navbar */
 .navbar {
     font-family: 'Archivo';
@@ -128,10 +132,36 @@ html, body {
     font-size: 14px;
 }
 
-@media (max-width: 768px) {
-    .item-list-container {
-        margin: 20px 8px !important;
-    }
+.item-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.card-title:hover {
+    text-decoration: underline; 
+    color: #000; 
+}
+
+.item-link:focus,
+.item-link:visited {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.all-products a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.all-products a:hover {
+    text-decoration: underline;
+    color: #ffffff; 
+}
+
+.all-products a:focus,
+.all-products a:visited {
+    text-decoration: none; 
+    color: inherit;
 }
 
 /* Footer */
@@ -167,6 +197,11 @@ html, body {
 }   
 
 /* Product Page */
+.container {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+}
+
 .product-page .row {
     padding-left: 30px;
     padding-right: 30px;
@@ -305,4 +340,7 @@ span.amount {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+
+
 
