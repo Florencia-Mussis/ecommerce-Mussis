@@ -60,7 +60,7 @@ const ItemListContainer = () => {
     const images = categoryImages[category] || categoryImages["default"]
 
     return (
-        <div>
+        <div id="hero-section">
             {/* <h1 classNameName="text-center text-uppercase fs-1 p-2">{greeting}</h1> */}
             <HeroSection title="New in" subtitle="Ver todo" images={images}/>
             {loading ? <p>Cargando...</p> : <ItemList products={products}/>}

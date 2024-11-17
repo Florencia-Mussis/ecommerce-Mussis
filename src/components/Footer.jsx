@@ -1,4 +1,5 @@
 import Footer_vector from '../assets/Footer_vector.png'
+import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
     return(
@@ -12,10 +13,10 @@ const Footer = () => {
                     <div className='d-flex gap-5'>
                         <div>
                             <ul className="categories-list list-unstyled d-flex flex-column">
-                                <li><a className="text-decoration-none text-uppercase text-dark" href="/category1">Mujer</a></li>
-                                <li><a className="text-decoration-none text-uppercase text-dark" href="/category2">Hombre</a></li>
-                                <li><a className="text-decoration-none text-uppercase text-dark" href="/category3">Niña</a></li>
-                                <li><a className="text-decoration-none text-uppercase text-dark" href="/category4">Niño</a></li>
+                                <li><NavLink to='/products/woman' as={NavLink} className="text-decoration-none text-uppercase text-dark" href="#hero-section">Mujer</NavLink></li>
+                                <li><NavLink to='/products/man' as={NavLink} className="text-decoration-none text-uppercase text-dark" href="#hero-section">Hombre</NavLink></li>
+                                <li><NavLink to='/products/girl' as={NavLink} className="text-decoration-none text-uppercase text-dark" href="#hero-section">Niña</NavLink></li>
+                                <li><NavLink to='/products/boy' as={NavLink} className="text-decoration-none text-uppercase text-dark" href="#hero-section">Niño</NavLink></li>
                             </ul>
                         </div>
                         <div>
