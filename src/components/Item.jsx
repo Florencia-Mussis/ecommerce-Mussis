@@ -9,7 +9,7 @@ const Item = ({product}) => {
                 <div className="card-body d-flex flex-column p-0 gap-2 text-start">
                     <p className="card-tag text-uppercase m-0">New</p>
                     <h5 className="card-title m-0">{product.name}</h5>
-                    <p className="card-text">{product.price} € </p>
+                    <p className="card-text">{product.price}.00 € </p>
                 </div>
             </div>
         </Link>

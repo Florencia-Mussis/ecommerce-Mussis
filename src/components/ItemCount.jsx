@@ -34,7 +34,7 @@ const ItemCount = ({stock, onAdd}) => {
                 </div>
             </div>
             <div>
-                <button className="text-uppercase rounded-0 add-to-cart text-white w-100" onClick={onAddHandler}>Añadir a la bolsa</button>
+                <button className="text-uppercase rounded-0 add-to-cart text-white w-100" onClick={onAddHandler} disabled={count === 0}>Añadir a la bolsa</button>
             </div>
         </div>
     )
