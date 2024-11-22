@@ -14,7 +14,7 @@ function App() {
     <BrowserRouter>
       <NavbarReactBootstrap/>
       <Routes>
-        <Route path='/' element={<ItemListContainer/>}/>
+        <Route path='/' element={<ItemListContainer greeting ='Welcome to CULTURE'/>}/>
         <Route path='/products/:category' element={<ItemListContainer/>}/>
         <Route path='/item/:id' element={<ItemDetailContainer/>}/>
         <Route path='*' element={<Error/>}/>

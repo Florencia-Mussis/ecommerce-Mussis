@@ -38,7 +38,7 @@ const categoryImages = {
 }
 
 
-const ItemListContainer = () => {
+const ItemListContainer = ({greeting}) => {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(false)
     const {category} = useParams()
@@ -61,7 +61,9 @@ const ItemListContainer = () => {
 
     return (
         <div id="hero-section">
-            {/* <h1 classNameName="text-center text-uppercase fs-1 p-2">{greeting}</h1> */}
+            <div className="d-flex justify-content-center">
+                {<h1 classNameName="text-center text-uppercase fs-1 p-2">{greeting}</h1>}
+            </div>
             <HeroSection title="New in" subtitle="Ver todo" images={images}/>
             {loading ? <p>Cargando...</p> : <ItemList products={products}/>}
         </div>
