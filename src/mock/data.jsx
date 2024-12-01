@@ -1,22 +1,7 @@
-const products = [
+export const productsDB  = [
     {
-        id: 'W-1',
-        name: 'Jersey punto',
-        stock: '10',
-        price: 29,
-        description: 'Punto medio. Diseño recto. Cuello redondo. Manga larga.',
-        materials: 'Composición: 59% poliéster. 36% acrílico. 5% lana.',
-        shipping: 'Envío gratis a tienda. Dispones de 30 días para realizar tu devolución.',
-        img: 'https://i.postimg.cc/Vs4D3ZP7/77017706-92-99999999-01.avif', 
-        img2: 'https://i.postimg.cc/15tJP09y/77017706-92.avif',
-        img3: 'https://i.postimg.cc/X7zxvZJd/77017706-92-R.avif',
-        img4: 'https://i.postimg.cc/VNjF4DFW/77017706-92-D1.avif',
-        category: 'woman'
-    },
-    {
-        id: 'W-2',
         name: 'Abrigo piel oversize',
-        stock: '10',
+        stock: 10,
         price: 169,
         description: '100% piel ovino. Diseño largo. Diseño oversize. Colección Selection. Cuello camisero. Manga larga con puño de tira abotonada. Dos bolsillos laterales. Cierre oculto de cremallera. Forro interior. Una selección de prendas que te acompañará durante la vuelta a la oficina. Confeccionada con materiales de calidad para construir un fondo de armario femenino y contemporáneo para tu día a día.',
         materials: 'Composición: 100% piel ovino. Forro: 100% poliéster.',
@@ -28,9 +13,8 @@ const products = [
         category: 'woman'
     },
     {
-        id: 'W-3',
         name: 'Bolso hombro corto',
-        stock: '10',
+        stock: 10,
         price: 35,
         description: 'Tamaño mediano. Efecto piel. Asa corta. Asa de hombro. Cierre de cremallera. Forro interior. 30.0x38.0x9.0 cm (Largo x Alto x Ancho).',
         materials: 'Composición: 100% poliuretano.',
@@ -42,9 +26,8 @@ const products = [
         category: 'woman'
     },
     {
-        id: 'W-4',
         name: 'Pantalón traje pinzas',
-        stock: '10',
+        stock: 10,
         price: 45,
         description: '',
         materials: '',
@@ -56,9 +39,8 @@ const products = [
         category: 'woman'
     },
     {
-        id: 'W-5',
         name: 'Falda larga punto',
-        stock: '10',
+        stock: 10,
         price: 36,
         description: 'Tejido mezcla de modal. Tejido fluido. Diseño largo. Diseño recto. Cintura con goma elástica.',
         materials: 'Composición: 78% modal. 22% poliéster.',
@@ -70,9 +52,8 @@ const products = [
         category: 'woman'
     },
     {
-        id: 'W-6',
         name: 'Mono largo lazo',
-        stock: '10',
+        stock: 10,
         price: 49,
         description: 'Tejido fluido. Diseño largo. Diseño recto. Escote de pico. Sin mangas. Tirantes anchos. Cierre de cremallera invisible en la parte posterior. Detalle cruzado. Forro interior. Disponible Plus.',
         materials: 'Composición: 100% poliéster. Forro: 100% poliéster.',
@@ -84,9 +65,8 @@ const products = [
         category: 'woman'
     },
     {
-        id: 'W-7',
         name: 'Camiseta cuello alto',
-        stock: '10',
+        stock: 10,
         price: 19,
         description: 'Diseño recto. Cuello alto. Manga larga. Sin cierre. Diseño entallado. ',
         materials: 'Composición: 96% viscosa. 4% elastano.',
@@ -98,9 +78,8 @@ const products = [
         category: 'woman'
     },
     {
-        id: 'W-8',
         name: 'Blusa asimétrica',
-        stock: '10',
+        stock: 10,
         price: 29,
         description: 'Diseño asimétrico. Diseño entallado. Diseño off-shoulder. Cuello asimétrico. Manga larga. Detalle fruncido. Cierre de cremallera lateral.',
         materials: 'Composición: 100% poliéster.',
@@ -112,9 +91,8 @@ const products = [
         category: 'woman'
     },
     {
-        id: 'M-1',
         name: 'Camisa algodón rayas',
-        stock: '10',
+        stock: 10,
         price: 39,
         description: 'Slim fit. Estampado rayas verticales. Manga larga con puños abotonados. Tejido invernal. Cuello clásico. Bajo redondeado. Cierre delantero con botones.',
         materials: 'Composición: 100% algodón.',
@@ -126,9 +104,8 @@ const products = [
         category: 'man'
     },
     {
-        id: 'M-2',
         name: 'Jeans regular fit',
-        stock: '10',
+        stock: 10,
         price: 49,
         description: 'Regular fit. Tejido de algodón reciclado. Cierre de cremallera y botón. Trabillas para cinturón. Bolsillo portamonedas. Dos bolsillos de parche en la parte posterior. Bajo recto. Dos bolsillos de parche en la parte delantera.',
         materials: 'Composición: 100% algodón.',
@@ -140,9 +117,8 @@ const products = [
         category: 'man'
     },
     {
-        id: 'M-3',
         name: 'Americana franela',
-        stock: '10',
+        stock: 10,
         price: 59,
         description: 'Colección Selection. Cuello solapado con muesca. Cierre de doble botonadura. Bolsillo de ribete en el pecho. Dos bolsillos de parche en la parte delantera. Manga larga con puños abotonados. Bolsillos interiores. Doble abertura posterior en el bajo. Slim fit. Confeccionado en Portugal. Tejido franela mezcla lana virgen italiana. Diseño jaspeado.Una colección de prendas clásicas de líneas minimalistas y diseño cuidado al detalle. Confeccionada con tejidos de gran calidad para conseguir un armario atemporal y con estilo.',
         materials: 'Composición: 45% acrílico. 32% poliéster. 23% lana virgen. Forro: 52% viscosa. 48% poliéster.',
@@ -154,9 +130,8 @@ const products = [
         category: 'man'
     },
     {
-        id: 'M-4',
         name: 'Jersey punto',
-        stock: '10',
+        stock: 10,
         price: 49,
         description: 'Regular fit. Tejido mezcla de lana. Punto medio. Cuello redondo. Manga larga. Bajo recto. Terminaciones de canalé en cuello, manga y bajo.',
         materials: 'Composición: 52% acrílico. 25% poliéster. 14% poliamida. 5% viscosa. 4% lana.',
@@ -168,9 +143,8 @@ const products = [
         category: 'man'
     },
     {
-        id: 'M-5',
         name: 'Sobrecamisa lana',
-        stock: '10',
+        stock: 10,
         price: 69,
         description: 'Cuello camisero. Cierre de botones. Puños abotonados. Dos bolsillos de parche con solapa en la parte delantera. Tejido de lana. Tejido twill.',
         materials: 'Composición: 63% lana. 33% poliéster. 4% poliamida. Forro: 80% poliéster. 20% algodón. Forro mangas: 100% poliéster.',
@@ -182,9 +156,8 @@ const products = [
         category: 'man'
     },
     {
-        id: 'M-6',
         name: 'Jeans regular fit lavado',
-        stock: '10',
+        stock: 10,
         price: 39,
         description: 'Regular fit. Trabillas para cinturón. Bolsillo portamonedas. Dos bolsillos laterales. Algodón orgánico. Efecto desgastado. Dos bolsillos de parche en la parte posterior.',
         materials: 'Composición: 99% algodón. 1% elastano.',
@@ -196,9 +169,8 @@ const products = [
         category: 'man'
     },
     {
-        id: 'M-7',
         name: 'Jersey punto estructura',
-        stock: '10',
+        stock: 10,
         price: 49,
         description: 'Regular fit. Tejido de punto medio. Estructura cuadrillé. Materiales reciclados. Manga larga. Cuello redondo. Terminaciones en canalé.',
         materials: 'Composición: 49% poliéster. 20% poliamida. 16% acrílico. 11% viscosa. 4% lana.',
@@ -210,9 +182,8 @@ const products = [
         category: 'man'
     },  
     {
-        id: 'M-8',
         name: 'Abrigo lana',
-        stock: '10',
+        stock: 10,
         price: 129,
         description: 'Colección Selection. Diseño recto. Largo medio. Cuello solapado con muesca. Manga larga. Dos bolsillos de ribete laterales. Forro interior parcial. Abertura posterior en el bajo. Tejido mezcla de lana. Cierre delantero con botones.Una colección de prendas clásicas de líneas minimalistas y diseño cuidado al detalle. Confeccionada con tejidos de gran calidad para conseguir un armario atemporal y con estilo.',
         materials: 'Composición: 63% lana. 37% poliéster. Forro: 55% poliéster. 45% viscosa.',
@@ -224,9 +195,8 @@ const products = [
         category: 'man'
     },  
     {
-        id: 'G-1',
         name: 'Anorak metálico',
-        stock: '10',
+        stock: 10,
         price: 39,
         description: 'Diseño acolchado. Interior de pelo. Cuello alto. Manga larga. Dos bolsillos laterales. Forro interior. Etiqueta para datos personales. Cierre delantero de cremallera y botón. Diseño recto. Capucha extraible.',
         materials: 'Composición: 100% poliamida. Forro: 100% poliéster. Relleno: 100% poliéster.',
@@ -238,9 +208,8 @@ const products = [
         category: 'girl'
     },
     {
-        id: 'G-2',
         name: 'Pantalón flare',
-        stock: '10',
+        stock: 10,
         price: 19,
         description: 'Tejido velvetón. Estilo flare. Bolsillos de parche. Diseño largo. Cierre de cremallera y botón.',
         materials: 'Composición: 98% algodón. 2% elastano.',
@@ -252,9 +221,8 @@ const products = [
         category: 'girl'
     },
     {
-        id: 'G-3',
         name: 'Vestido volantes',
-        stock: '10',
+        stock: 10,
         price: 22,
         description: 'Tejido de punto. Tejido de algodón. Diseño recto. Detalle de volantes. Manga larga abullonada. Cierre de botones en la parte posterior. Diseño corto. Cuello redondo.',
         materials: 'Composición: 70% algodón. 30% poliamida.',
@@ -266,9 +234,8 @@ const products = [
         category: 'girl'
     },
     {
-        id: 'G-4',
         name: 'Jersey lana',
-        stock: '10',
+        stock: 10,
         price: 29,
         description: 'Vuelta a clase. Tejido de punto grueso. Diseño recto. Cuello alto con cierre de cremallera. Manga larga.',
         materials: 'Composición: 67% poliéster. 24% acrílico. 6% lana. 3% elastano.',
@@ -280,9 +247,8 @@ const products = [
         category: 'girl'
     },
     {
-        id: 'G-5',
         name: 'Chaleco punto',
-        stock: '10',
+        stock: 10,
         price: 18,
         description: 'Tejido con algodón. Tejido de punto fino. Bajo en contraste. Diseño recto. Sin mangas. Cuello redondo.',
         materials: 'Composición: 60% algodón. 40% acrílico.',
@@ -294,9 +260,8 @@ const products = [
         category: 'girl'
     },
     {
-        id: 'G-6',
         name: 'Blusa calados',
-        stock: '10',
+        stock: 10,
         price: 17,
         description: '100% Algodón. Diseño recto. Detalles bordados. Manga larga abullonada. Cierre delantero con botones. Cuello redondo.',
         materials: 'Composición: 100% algodón. Forro: 100% algodón. Puntilla: 100% algodón. Bordado: 100% poliéster.',
@@ -308,9 +273,8 @@ const products = [
         category: 'girl'
     },
     {
-        id: 'G-7',
         name: 'Jersey cuello alto',
-        stock: '10',
+        stock: 10,
         price: 29,
         description: 'Tejido de punto. Diseño recto. Cuello alto. Manga larga.',
         materials: 'Composición: 55% acrílico. 38% poliéster. 4% elastano. 3% lana.',
@@ -322,9 +286,8 @@ const products = [
         category: 'girl'
     },
     {
-        id: 'G-8',
         name: 'Anorak estampado',
-        stock: '10',
+        stock: 10,
         price: 34,
         description: 'Diseño acolchado. Diseño recto. Diseño flores. Capucha. Manga larga. Dos bolsillos laterales. Cierre de botones a presión. Etiqueta para datos personales.',
         materials: 'Composición: 100% poliéster. Forro: 100% poliéster. Relleno: 100% poliéster.',
@@ -336,9 +299,8 @@ const products = [
         category: 'girl'
     },    
     {
-        id: 'B-1',
         name: 'Anorak impermeable',
-        stock: '10',
+        stock: 10,
         price: 39,
         description: 'Colección Vuelta al cole. Diseño recto. Diseño largo. Manga larga. Cuello alto. Forro interior desmontable. Cierre oculto de cremallera. Cierre de botones a presión.',
         materials: 'Composición: 100% poliéster. Forroextraible: 100% poliéster. Interior: 100% poliéster. Relleno: 100% poliéster.',
@@ -350,9 +312,8 @@ const products = [
         category: 'boy'
     },
     {
-        id: 'B-2',
         name: 'Jersey punto',
-        stock: '10',
+        stock: 10,
         price: 22,
         description: 'Tejido de punto grueso. Diseño recto. Cuello redondo. Manga larga. Sin cierre.',
         materials: 'Composición: 52% poliéster. 22% acrílico. 19% algodón. 6% lana. 1% elastano.',
@@ -364,9 +325,8 @@ const products = [
         category: 'boy'
     },
     {
-        id: 'B-3',
         name: 'Camiseta algodón',
-        stock: '10',
+        stock: 10,
         price: 9,
         description: 'Cuello redondo. Manga larga. Diseño recto. Vuelta a clase. Detalles estampados.',
         materials: 'Composición: 100% algodón.',
@@ -378,9 +338,8 @@ const products = [
         category: 'boy'
     },
     {
-        id: 'B-4',
         name: 'Camisa leñador',
-        stock: '10',
+        stock: 10,
         price: 15,
         description: 'Vuelta a clase. Diseño recto. Diseño de cuadros. Cuello camisero. Cierre de botones. Manga larga con puños abotonados.',
         materials: 'Composición: 100% algodón.',
@@ -392,9 +351,8 @@ const products = [
         category: 'boy'
     },
     {
-        id: 'B-5',
         name: 'Jersey lana',
-        stock: '10',
+        stock: 10,
         price: 22,
         description: 'Vuelta a clase. Tejido con lana. Tejido de punto grueso. Diseño recto. Cuello redondo. Manga larga.',
         materials: 'Composición: 55% poliéster. 32% acrílico. 10% lana. 3% elastano.',
@@ -406,9 +364,8 @@ const products = [
         category: 'boy'
     },
     {
-        id: 'B-6',
         name: 'Jeans lavado oscuro',
-        stock: '10',
+        stock: 10,
         price: 15,
         description: 'Tejido de algodón estilo tejano vaquero. Diseño recto. Diseño largo. Cintura con goma elástica. Cinco bolsillos. Cierre de botón a presión.',
         materials: 'Composición: 99% algodón. 1% elastano.',
@@ -420,9 +377,8 @@ const products = [
         category: 'boy'
     },
     {
-        id: 'B-7',
         name: 'Camisa cuadros',
-        stock: '10',
+        stock: 10,
         price: 17,
         description: 'Regular fit. Cuello camisero. Diseño recto. Manga larga. Diseño de cuadros. Cierre delantero con botones.',
         materials: 'Composición: 100% algodón.',
@@ -434,9 +390,8 @@ const products = [
         category: 'boy'
     },
     {
-        id: 'B-8',
         name: 'Jeans cordón',
-        stock: '10',
+        stock: 10,
         price: 19,
         description: 'Colección Vuelta al cole. Tejido de algodón estilo tejano vaquero. Comfy-fit. Slim fit. Diseño largo. Tiro medio. Cinco bolsillos. Cintura elástica ajustable. Cierre de cordón.',
         materials: 'Composición: 77% algodón. 21% poliéster. 1% elastano. 1% viscosa.',
