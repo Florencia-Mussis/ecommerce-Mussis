@@ -1,14 +1,28 @@
-import React from "react"
+import React, { useContext } from "react"
 import ItemCount from "./ItemCount"
 import CollapsibleSection from "./CollapsibleSection"
 import ProductCarousel from "./ProductCarousel"
+import { useState } from "react"
+import { Link } from "react-router-dom"
+import { CartContext } from "../context/CartContext"
+
 
 const ItemDetail = ({product}) => {
-    const onAdd = (count) => {
-        if (count > 0) {
-            alert(`Agregaste al carrito ${count} productos`) 
+    const [purchase, setPurchase] = useState(false)
+    const {addToCart} = useContext(CartContext)
+
+    const onAdd = (units) => {
+        setPurchase(true)
+        let cartItem = {
+            name: product.name,
+            img: product.img,
+            price: product.price,
+            stock: product.stock,
+            id: product.id
         }
+        addToCart(cartItem, units)
     }
+
 
     return(
         <div className="product-page">
@@ -18,12 +32,12 @@ const ItemDetail = ({product}) => {
                 </div>
 
                 <div className="col-md-4 text-center d-none d-md-block">
-                    <img src={product.img} alt={product.name} className="w-100"/>
-                    <img src={product.img2} alt={product.name} className="w-100"/>
+                    <img src={product.img} alt={product.name} className="w-100" loading="lazy"/>
+                    <img src={product.img2} alt={product.name} className="w-100" loading="lazy"/>
                 </div>
                 <div className="col-md-4 text-center d-none d-md-block">    
-                    <img src={product.img3} alt={product.name} className="w-100"/>
-                    <img src={product.img4} alt={product.name} className="w-100"/>
+                    <img src={product.img3} alt={product.name} className="w-100" loading="lazy"/>
+                    <img src={product.img4} alt={product.name} className="w-100" loading="lazy"/>
                 </div>
                 <div className="col-md-4 text-center">
                     <div className="product-info d-flex flex-column align-items-start">
@@ -32,7 +46,19 @@ const ItemDetail = ({product}) => {
                             <h1 className="title text-uppercase">{product.name}</h1>
                             <span className="price">{product.price}.00 €</span>
                         </div>
-                        <ItemCount stock={product.stock} onAdd={onAdd}/>
+                        {purchase ?
+                            <div className="purchase-options d-flex flex-column w-100">
+                                <div>
+                                    <p className="art-added text-uppercase">¡Artículo agregado a la bolsa!</p>
+                                </div>
+                                <button className="text-uppercase rounded-0 add-to-cart">
+                                    <Link to='/' className='text-white text-decoration-none'>Seguir comprando </Link> 
+                                </button>
+                                <button className="text-uppercase rounded-0 add-to-cart">
+                                    <Link to='/cart' className='text-white text-decoration-none'>Ir al carrito </Link>
+                                </button>    
+                            </div>
+                         : <ItemCount stock={product.stock} onAdd={onAdd}/>}
                         <CollapsibleSection product={product}/>
                     </div>
                 </div>  

@@ -7,20 +7,27 @@ import ItemDetailContainer from './components/ItemDetailContainer'
 import Footer from './components/Footer'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Error from './components/Error'
+import { CartProvider } from './context/CartContext'
+import CartView from './components/CartView'
+import Checkout from './components/Checkout'
 
 
 function App() {
   return (
-    <BrowserRouter>
-      <NavbarReactBootstrap/>
-      <Routes>
-        <Route path='/' element={<ItemListContainer greeting ='Welcome to CULTURE'/>}/>
-        <Route path='/products/:category' element={<ItemListContainer/>}/>
-        <Route path='/item/:id' element={<ItemDetailContainer/>}/>
-        <Route path='*' element={<Error/>}/>
-      </Routes>
-      <Footer/>
-    </BrowserRouter>
+    <CartProvider>
+      <BrowserRouter>
+        <NavbarReactBootstrap/>
+        <Routes>
+          <Route path='/' element={<ItemListContainer greeting ='Welcome to CULTURE'/>}/>
+          <Route path='/products/:category' element={<ItemListContainer/>}/>
+          <Route path='/item/:id' element={<ItemDetailContainer/>}/>
+          <Route path='/cart' element={<CartView/>}/>
+          <Route path='/checkout' element={<Checkout/>}/>
+          <Route path='*' element={<Error/>}/>
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
+    </CartProvider>
   )
 }
 
