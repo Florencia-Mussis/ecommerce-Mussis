@@ -164,6 +164,12 @@ html, body {
     color: inherit;
 }
 
+@media (max-width: 768px) {
+    .item-list-container {
+        margin: 20px 8px 0px 8px !important;
+    }
+}
+
 /* Footer */
 .footer-container {
     padding: 42px !important;
@@ -278,6 +284,7 @@ html, body {
 
 @media (max-width: 768px) {
     .carousel-container {
+        padding-top: 40px !important;
         padding-bottom: 40px !important;
     }
     .product-info {
@@ -341,6 +348,237 @@ span.amount {
     padding-bottom: 10px;
 }
 
+.art-added {
+    font-family: 'Archivo';
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.purchase-options {
+    margin-top: 40px;
+    gap: 15px;
+}
+
+/* Empty Cart */
+.empty-cart-container {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.empty-cart-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 40px;
+    max-width: 350px;
+}
+
+.text-cart-empty {
+    font-family: 'Archivo';
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.text-cart-empty-button {
+    font-size: 12px;
+    padding: 10px 144px !important;
+}
+
+@media (max-width: 768px) {
+    .empty-cart-container {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}    
+
+/* Cart */
+.cart-list {
+    margin: 20px 30px !important;
+}
+.cart-item-info {
+    margin-top: 10px;
+}
+
+.cart-item-info p {
+    font-family: 'Archivo';
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0px !important;
+}
+
+.remove-button {
+    background-color: hsla(0,0%,100%,.8);
+    padding: 0px;
+    right: 12px;
+    top: 12px;
+}
+
+.remove-button span {
+    padding: 8px;
+    color: #131313;
+}
+
+.order-detail {
+    font-family: 'Archivo';
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0px !important;
+    gap: 40px;
+}
+
+.order-detail p {
+    margin: 0px;
+}
+
+.order-info {
+    gap: 20px;
+}
+
+.total {
+    font-family: 'Archivo';
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.taxes {
+    font-size: 10px;
+}
+
+.order-buttons {
+    gap: 10px;
+}
+
+.order-button {
+    font-weight: 500 !important;
+    font-size: 12px !important;
+}
+
+.extra-info {
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .order-detail {
+        margin: 60px 0px 30px !important;
+    }
+    .cart-list {
+        margin-left: 8px !important;
+        margin-right: 8px !important;
+    }
+}    
+
+/* Loader */
+.loader {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+#hero-section .loader {
+    margin-top: 100px;
+    margin-bottom: 58px;
+}
 
 
+@media (max-width: 768px) {
+    .loader {
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+    #hero-section .loader {
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+}
 
+/* Form */
+.checkout-form {
+    width: fit-content;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 58px;
+}
+
+.form-title {
+    font-family: 'Archivo';
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 20px;
+} 
+
+.form-text,
+.form-code {
+    font-family: 'Archivo';
+    font-weight: 300;
+    font-size: 14px;
+} 
+
+
+.form-text {
+    margin: 0px 0px 40px 0px !important;
+} 
+
+.form-title,
+.form-text,
+.form-code {
+    text-align: center;
+    color: #000000 !important;
+} 
+
+.form-control {
+    border-radius: 0.5px !important;
+    margin: 0px 0px 20px 0px;
+    border: 0.5px solid #000000 !important;
+    padding: 12px 10px !important;
+}   
+
+.form-control::placeholder {
+    font-family: 'Archivo' !important;
+    font-size: 14px !important;
+    font-weight: 300 !important;
+    color: #BBBBBB !important;
+}  
+
+.btn-form {
+    margin-top: 20px;
+    padding: 10px 153px !important;
+    border-radius: 0px !important;
+    font-family: 'Archivo' !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+}
+
+@media (max-width: 768px) {
+    .btn-form {
+        padding: 10px !important;
+    }    
+    .checkout-form {
+        margin-bottom: 30px;
+    }
+}
+
+/* Successfull order  */
+.success-order {
+    margin-bottom: 188px !important;
+    width: fit-content;
+    margin: auto;
+}
+
+.success-order-text {
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.success-order-icon {
+    padding: 26px 16px;
+}
+
+.success-order-button {
+    margin: auto !important;
+}
+
+@media (max-width: 768px) {
+    .success-order {
+        margin-bottom: 88px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
