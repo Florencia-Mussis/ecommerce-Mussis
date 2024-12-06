@@ -348,10 +348,14 @@ span.amount {
     padding-bottom: 10px;
 }
 
-.art-added {
+.cart-added {
     font-family: 'Archivo';
     font-weight: 500;
     font-size: 12px;
+}
+
+.out-of-stock {
+    background-color: gainsboro;
 }
 
 .purchase-options {
@@ -528,7 +532,11 @@ span.amount {
     margin: 0px 0px 20px 0px;
     border: 0.5px solid #000000 !important;
     padding: 12px 10px !important;
-}   
+}  
+
+.form-validate {
+   margin-top: -20px !important;
+} 
 
 .form-control::placeholder {
     font-family: 'Archivo' !important;
