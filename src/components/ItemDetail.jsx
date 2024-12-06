@@ -9,7 +9,7 @@ import { CartContext } from "../context/CartContext"
 
 const ItemDetail = ({product}) => {
     const [purchase, setPurchase] = useState(false)
-    const {addToCart} = useContext(CartContext)
+    const {addToCart, itemStock} = useContext(CartContext)
 
     const onAdd = (units) => {
         setPurchase(true)
@@ -23,6 +23,7 @@ const ItemDetail = ({product}) => {
         addToCart(cartItem, units)
     }
 
+    const updatedStock = product.stock - itemStock(product.id)
 
     return(
         <div className="product-page">
@@ -58,7 +59,7 @@ const ItemDetail = ({product}) => {
                                     <Link to='/cart' className='text-white text-decoration-none'>Ir al carrito </Link>
                                 </button>    
                             </div>
-                         : <ItemCount stock={product.stock} onAdd={onAdd}/>}
+                         : <ItemCount stock={updatedStock} onAdd={onAdd}/>}
                         <CollapsibleSection product={product}/>
                     </div>
                 </div>  

@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 const ItemCount = ({stock, onAdd}) => {
-    const [count, setCount] = useState(1)
+    const [count, setCount] = useState(stock === 0 ? 0 : 1)
 
     const sumar = () => {
         if (count < stock ){
@@ -22,6 +22,7 @@ const ItemCount = ({stock, onAdd}) => {
     return(
         <div className="count-container d-flex flex-column w-100">
             <div className="units-count d-flex flex-column align-items-start">
+                {stock === 0 && <p className="cart-added text-uppercase out-of-stock">Out of stock</p>}
                 <p className="units-text text-uppercase mb-0">Unidades</p>
                 <div className="d-flex count-selectors">
                     <button className="count-button bg-white p-0" onClick={restar}>
