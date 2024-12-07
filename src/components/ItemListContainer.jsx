@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react"
-import { productsDB } from "../mock/data"
 import HeroSection from "./HeroSection"
 import ItemList from "./ItemList"
 import { useParams } from "react-router-dom"
@@ -14,7 +13,7 @@ import HeroGirlMobile from "../assets/Hero_girl_mobile.png"
 import HeroBoy from "../assets/Hero_boy.png"
 import HeroBoyMobile from "../assets/Hero_boy_mobile.png"
 import Loader from "./Loader"
-import { addDoc, collection, getDocs, query, where } from "firebase/firestore"
+import { collection, getDocs, query, where } from "firebase/firestore"
 import { db } from "../services/firebase"
 
 const categoryImages = {
