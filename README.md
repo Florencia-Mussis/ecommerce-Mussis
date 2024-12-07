@@ -1,8 +1,27 @@
-# React + Vite
+# CULTURE 🛍️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Descripcion del proyecto: 
 
-Currently, two official plugins are available:
+Agregar captura de pantalla del proyecto y guardarla en el proyecto
+![image](direccion de la imagen ej: (/assets/....png))
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Instalación ⚙️
+
+- Clone el repositorio
+- Ejecute el npm install para instalar dependencias y crear la carpeta node_modules
+- Ejecute npm run dev para levantarlo en servidor local
+
+### Version HOST 💻
+
+[Culture](url de versel)
+
+### Librerias utilizadas 📖
+
+- [Bootstrap](url de bootstrap): utilizada para el styling de la app.
+- [Bootstrap React](url de bootstrap): utilizada para el styling de la app.
+- [Firebase](url de firebase): utilizada como base de datos.
+- [React Router Dom](utr de rrd): utilizada para la navegación por rutas.
+- [React Spinners](utr de rrd): utilizada para implementar componente spinners.
+- [React Hook Form](utr de rrd): utilizada para la validación de formularios.
+
+# Desarrollada por Florencia Mussis
