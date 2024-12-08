@@ -49,10 +49,6 @@ html, body {
     box-shadow: 0 0 0 0.1rem !important;
 }
 
-.cart-icon svg {
-    width: 100% !important;
-}
-
 @media (max-width: 992px) {
     .navbar-collapse {
         background-color: white;

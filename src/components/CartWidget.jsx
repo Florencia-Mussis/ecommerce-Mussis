@@ -6,7 +6,7 @@ const CartWidget = () => {
     const {cartUnits} = useCart()
 
     return (
-        <div className="cart-icon d-flex position-relative">
+        <div className="cart-icon d-flex position-relative align-items-center justify-content-center">
             <PiBagLight fontSize={'24px'}/>
             { cartUnits() > 0 && <Badge className="p-0" bg="Light" text="dark">{cartUnits()}</Badge>}
         </div>
