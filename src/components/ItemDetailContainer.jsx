@@ -4,10 +4,12 @@ import { useParams } from "react-router-dom"
 import Loader from "./Loader"
 import { collection, doc, getDoc } from "firebase/firestore"
 import { db } from '../services/firebase'
+import InvalidProduct from "./InvalidProduct"
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState({})
     const [loading, setLoading] = useState(false)
+    const [invalidProduct, setInvalidProduct] = useState(false)
     const {id} = useParams() 
 
     useEffect(()=>{
@@ -15,7 +17,13 @@ const ItemDetailContainer = () => {
         const productsCollection = collection(db, 'products')
         const docRef = doc(productsCollection, id)
         getDoc(docRef)
-        .then((res) => setProduct({id: res.id, ...res.data()}))
+        .then((res) => {
+            if (res.data()){
+                setProduct({id: res.id, ...res.data()})
+            } else {
+                setInvalidProduct(true)
+            }
+        })
         .catch((error) => console.log(error))
         .finally(()=> setLoading(false))
     }, [])
@@ -28,12 +36,20 @@ const ItemDetailContainer = () => {
     //     .catch((error)=> console.log(error))
     //     .finally(()=> setLoading(false))
     // }, [])
- 
-    return(
-        <div>
-           {loading ? <Loader/> : <ItemDetail product={product}/>}
-        </div>
-    )
+
+    if(invalidProduct) {
+        return(
+            <div>
+             <InvalidProduct/>
+            </div>
+        )
+    } else {    
+        return(
+            <div>
+            {loading ? <Loader/> : <ItemDetail product={product}/>}
+            </div>
+        )
+    }    
 }
 
 export default ItemDetailContainer
