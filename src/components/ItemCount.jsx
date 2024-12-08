@@ -26,11 +26,11 @@ const ItemCount = ({stock, onAdd}) => {
                 <p className="units-text text-uppercase mb-0">Unidades</p>
                 <div className="d-flex count-selectors">
                     <button className="count-button bg-white p-0" onClick={restar}>
-                        <span>-</span> 
+                        <span className="text-dark">-</span> 
                     </button>
                     <span className="amount">{count}</span>
                     <button className="count-button bg-white p-0" onClick={sumar}>
-                        <span>+</span>
+                        <span className="text-dark">+</span>
                     </button>
                 </div>
             </div>

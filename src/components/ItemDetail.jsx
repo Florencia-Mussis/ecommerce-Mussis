@@ -44,7 +44,7 @@ const ItemDetail = ({product}) => {
                     <div className="product-info d-flex flex-column align-items-start">
                         <span className="tag text-uppercase">New</span>
                         <div className="name-price d-flex flex-column align-items-start">
-                            <h1 className="title text-uppercase">{product.name}</h1>
+                            <h1 className="title text-uppercase text-start">{product.name}</h1>
                             <span className="price">{product.price}.00 €</span>
                         </div>
                         {purchase ?
