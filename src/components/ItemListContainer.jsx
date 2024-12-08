@@ -40,7 +40,7 @@ const categoryImages = {
 }
 
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(false)
     const {category} = useParams()
@@ -92,9 +92,6 @@ const ItemListContainer = ({greeting}) => {
 
     return (
         <div id="hero-section">
-            <div className="d-flex justify-content-center">
-                {<h1 className="text-center text-uppercase fs-1 p-2">{greeting}</h1>}
-            </div>
             <HeroSection title="New in" subtitle="Ver todo" images={images}/>
             {/* <button onClick={addData}>agregar firebase</button> */}
             {loading ? <Loader/> : <ItemList products={products}/>}
