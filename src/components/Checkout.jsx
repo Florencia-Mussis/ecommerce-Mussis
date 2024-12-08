@@ -113,7 +113,7 @@ function Checkout() {
                     <p className='form-validate text-danger form-text text-start'>*Por favor complete el campo Repetir E-mail</p>
                   )}
                   {errors?.repeatEmail?.type === "equalEmails" && (
-                    <p className='form-validate text-danger form-text text-start'>*Los e-mails deben ser iguales</p>
+                    <p className='form-validate text-danger form-text text-start'>*Los e-mails deben coincidir</p>
                   )}
               </Form.Group>
       
