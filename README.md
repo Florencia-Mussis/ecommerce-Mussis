@@ -1,15 +1,14 @@
 # CULTURE 🛍️
 
-Descripcion del proyecto: 
+Desarrollo de una tienda online para la venta de productos, con funcionalidades como navegación por categorías, carrito de compras dinámico y sistema de órdenes.
 
-Agregar captura de pantalla del proyecto y guardarla en el proyecto
-![image](direccion de la imagen ej: (/assets/....png))
+![image](./src/assets/Culture.png)
 
 ### Instalación ⚙️
 
-- Clone el repositorio
-- Ejecute el npm install para instalar dependencias y crear la carpeta node_modules
-- Ejecute npm run dev para levantarlo en servidor local
+- Clone el repositorio.
+- Ejecute npm install para instalar dependencias y crear la carpeta node_modules.
+- Ejecute npm run dev para levantar el proyecto en el servidor local.
 
 ### Version HOST 💻
 
@@ -17,11 +16,11 @@ Agregar captura de pantalla del proyecto y guardarla en el proyecto
 
 ### Librerias utilizadas 📖
 
-- [Bootstrap](url de bootstrap): utilizada para el styling de la app.
-- [Bootstrap React](url de bootstrap): utilizada para el styling de la app.
-- [Firebase](url de firebase): utilizada como base de datos.
-- [React Router Dom](utr de rrd): utilizada para la navegación por rutas.
-- [React Spinners](utr de rrd): utilizada para implementar componente spinners.
-- [React Hook Form](utr de rrd): utilizada para la validación de formularios.
+- [Bootstrap](https://getbootstrap.com/): utilizada para el styling de la app.
+- [React Bootstrap](https://react-bootstrap.netlify.app/): utilizada para el styling de la app.
+- [Firebase](https://firebase.google.com/?hl=es-419): utilizada como base de datos.
+- [React Router Dom](https://reactrouter.com/): utilizada para la navegación por rutas.
+- [React Spinners](https://www.npmjs.com/package/react-spinners): utilizada para implementar componente spinner.
+- [React Hook Form](https://react-hook-form.com/): utilizada para la validación de formularios.
 
 # Desarrollada por Florencia Mussis
