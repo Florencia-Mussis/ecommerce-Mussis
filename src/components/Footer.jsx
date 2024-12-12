@@ -21,10 +21,10 @@ const Footer = () => {
                         </div>
                         <div>
                             <ul className="categories-list list-unstyled d-flex flex-column">
-                            <li><a className="text-decoration-none text-uppercase text-dark" href="/category1">About</a></li>
-                            <li><a className="text-decoration-none text-uppercase text-dark" href="/category2">Ayuda</a></li>
-                            <li><a className="text-decoration-none text-uppercase text-dark" href="/category3">Faq</a></li>
-                            <li><a className="text-decoration-none text-uppercase text-dark" href="/category4">T&C</a></li>
+                            <li><a className="text-decoration-none text-uppercase text-dark" href="#">About</a></li>
+                            <li><a className="text-decoration-none text-uppercase text-dark" href="#">Ayuda</a></li>
+                            <li><a className="text-decoration-none text-uppercase text-dark" href="#">Faq</a></li>
+                            <li><a className="text-decoration-none text-uppercase text-dark" href="#">T&C</a></li>
                             </ul>
                         </div>
                     </div>
